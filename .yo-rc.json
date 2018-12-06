@@ -1,0 +1,30 @@
+{
+  "generator-angularjs-library": {
+    "props": {
+      "author": {
+        "name": "Gabriel Rodrigues",
+        "email": "gabrielsr@gmail.com"
+      },
+      "libraryName": {
+        "original": "rhases-angularjs-commons",
+        "camelized": "rhasesAngularjsCommons",
+        "dasherized": "rhases-angularjs-commons",
+        "slugified": "rhases-angularjs-commons",
+        "parts": [
+          "rhases",
+          "angularjs",
+          "commons"
+        ]
+      },
+      "includeModuleDirectives": true,
+      "includeModuleFilters": true,
+      "includeModuleServices": true,
+      "includeAngularModuleResource": false,
+      "includeAngularModuleCookies": false,
+      "includeAngularModuleSanitize": false,
+      "librarySrcDirectory": "src/rhases-angularjs-commons",
+      "libraryUnitTestDirectory": "test/unit/rhases-angularjs-commons",
+      "libraryUnitE2eDirectory": "test/e2e/rhases-angularjs-commons"
+    }
+  }
+}
