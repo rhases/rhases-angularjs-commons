@@ -1,5 +1,6 @@
 // Karma configuration
 // Generated on Thu Aug 21 2014 10:24:39 GMT+0200 (CEST)
+var makeWebpackConfig  = require('./webpack.make');
 
 module.exports = function(config) {
   config.set({
@@ -11,7 +12,7 @@ module.exports = function(config) {
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['mocha', 'chai-jquery', 'jquery-1.8.3', 'sinon-chai'],
-
+    
     plugins: [
       'karma-mocha',
       'karma-chai',
@@ -20,7 +21,8 @@ module.exports = function(config) {
       'karma-phantomjs-launcher',
       'karma-jquery',
       'karma-chai-jquery',
-      'karma-spec-reporter'
+      'karma-spec-reporter',
+      'karma-webpack',
     ],
 
     // list of files / patterns to load in the browser
@@ -41,15 +43,24 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'spec.js': ['webpack'],
+      'src/**/*.js': ['webpack'],
     },
 
+    webpack: makeWebpackConfig({ TEST: true }),
 
+    webpackMiddleware: {
+      // webpack-dev-middleware configuration
+      // i. e.
+      noInfo: true
+    },
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['progress', 'spec'],
 
-
+    // list of files / patterns to exclude
+    exclude: [],
     // web server port
     port: 9876,
 
