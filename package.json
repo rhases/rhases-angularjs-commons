@@ -1,6 +1,14 @@
 {
   "name": "rhases-angularjs-commons",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "scripts": {
+    "test": "gulp test-src",
+    "clean": "rm -rf dist/",
+    "precompile": "npm run clean",
+    "compile": "gulp build",
+    "prepublish": "npm run compile",
+    "release": "standard-version"
+  },
   "author": {
     "name": "Gabriel Rodrigues",
     "email": "gabrielsr@gmail.com"
@@ -29,7 +37,8 @@
     "mocha": "^1.21.4",
     "run-sequence": "^1.0.2",
     "sinon": "^1.10.3",
-    "sinon-chai": "^2.5.0"
+    "sinon-chai": "^2.5.0",
+    "standard-version": "^3.0.0"
   },
   "engines": {
     "node": ">=0.8.0"
