@@ -5,21 +5,21 @@
   // before all nested files are concatenated by Gulp
 
   // Config
-  angular.module('rhasesAngularjsCommons.config', [])
-      .value('rhasesAngularjsCommons.config', {
+  angular.module('rhasesAngularJSCommons.config', [])
+      .value('rhasesAngularJSCommons.config', {
           debug: true
       });
 
   // Modules
-  angular.module('rhasesAngularjsCommons.directives', []);
-  angular.module('rhasesAngularjsCommons.filters', []);
-  angular.module('rhasesAngularjsCommons.services', []);
-  angular.module('rhasesAngularjsCommons',
+  angular.module('rhasesAngularJSCommons.directives', []);
+  angular.module('rhasesAngularJSCommons.filters', []);
+  angular.module('rhasesAngularJSCommons.services', []);
+  angular.module('rhasesAngularJSCommons',
       [
-          'rhasesAngularjsCommons.config',
-          'rhasesAngularjsCommons.directives',
-          'rhasesAngularjsCommons.filters',
-          'rhasesAngularjsCommons.services'
+          'rhasesAngularJSCommons.config',
+          'rhasesAngularJSCommons.directives',
+          'rhasesAngularJSCommons.filters',
+          'rhasesAngularJSCommons.services'
       ]);
 
 })(angular);

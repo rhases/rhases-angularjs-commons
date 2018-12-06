@@ -13,29 +13,29 @@ describe('', function() {
   beforeEach(function() {
 
   // Get module
-  module = angular.module('rhasesAngularjsCommons');
+  module = angular.module('rhasesAngularJSCommons');
   dependencies = module.requires;
   });
 
   it('should load config module', function() {
-    expect(hasModule('rhasesAngularjsCommons.config')).to.be.ok;
+    expect(hasModule('rhasesAngularJSCommons.config')).to.be.ok;
   });
 
   
   it('should load filters module', function() {
-    expect(hasModule('rhasesAngularjsCommons.filters')).to.be.ok;
+    expect(hasModule('rhasesAngularJSCommons.filters')).to.be.ok;
   });
   
 
   
   it('should load directives module', function() {
-    expect(hasModule('rhasesAngularjsCommons.directives')).to.be.ok;
+    expect(hasModule('rhasesAngularJSCommons.directives')).to.be.ok;
   });
   
 
   
   it('should load services module', function() {
-    expect(hasModule('rhasesAngularjsCommons.services')).to.be.ok;
+    expect(hasModule('rhasesAngularJSCommons.services')).to.be.ok;
   });
   
 

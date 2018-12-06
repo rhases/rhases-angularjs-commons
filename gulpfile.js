@@ -7,6 +7,7 @@ var path = require('path');
 var plumber = require('gulp-plumber');
 var runSequence = require('run-sequence');
 var jshint = require('gulp-jshint');
+var webpack = require('gulp-webpack');
 
 /**
  * File patterns
@@ -39,6 +40,7 @@ var lintFiles = [
 gulp.task('build', function() {
   gulp.src(sourceFiles)
     .pipe(plumber())
+    .pipe(webpack())
     .pipe(concat('rhases-angularjs-commons.js'))
     .pipe(gulp.dest('./dist/'))
     .pipe(uglify())

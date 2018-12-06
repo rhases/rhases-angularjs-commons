@@ -7,7 +7,7 @@
       },
       "libraryName": {
         "original": "rhases-angularjs-commons",
-        "camelized": "rhasesAngularjsCommons",
+        "camelized": "rhasesAngularJSCommons",
         "dasherized": "rhases-angularjs-commons",
         "slugified": "rhases-angularjs-commons",
         "parts": [

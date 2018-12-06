@@ -17,8 +17,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "angular-mocks": ">=1.2.0",
-    "angular-scenario": ">=1.2.0",
-    "angular": ">=1.2.0"
+    "angular-mocks": ">=1.6.0",
+    "angular-scenario": ">=1.6.0",
+    "angular": ">=1.6.0"
   }
 }

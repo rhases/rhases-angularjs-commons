@@ -13,7 +13,9 @@
     "name": "Gabriel Rodrigues",
     "email": "gabrielsr@gmail.com"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rh-transformer": "^0.1.1"
+  },
   "devDependencies": {
     "chai": "^1.9.1",
     "chai-jquery": "^1.2.3",
@@ -23,6 +25,7 @@
     "gulp-plumber": "^0.6.6",
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^0.3.1",
+    "gulp-webpack": "^1.5.0",
     "jshint-stylish": "^0.4.0",
     "karma": "^0.12.22",
     "karma-chai": "^0.1.0",
